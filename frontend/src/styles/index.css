@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+:root {
+  --color-brand: #3B4B8C;
+  --color-brand-dark: #232C56;
+  --color-brand-light: #E4E7F7;
+  --color-ink: #111114;
+
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+body {
+  background-color: white;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+h1, h2, .font-display {
+  font-family: var(--font-display);
+}
+
+.bg-brand {
+  background-color: var(--color-brand);
+}
+
+.bg-brand-dark {
+  background-color: var(--color-brand-dark);
+}
+
+.bg-brand-light {
+  background-color: var(--color-brand-light);
+}
+
+.bg-ink {
+  background-color: var(--color-ink);
+}
+
+.text-brand {
+  color: var(--color-brand);
+}
+
+.text-ink {
+  color: var(--color-ink);
+}
+
+.border-brand {
+  border-color: var(--color-brand);
+}
+
+.hover\:bg-brand-dark:hover {
+  background-color: var(--color-brand-dark);
+}
+
+.hover\:text-brand-dark:hover {
+  color: var(--color-brand-dark);
+}
+
+.hover\:bg-brand-light:hover {
+  background-color: var(--color-brand-light);
+}
+
+button,
+a,
+select,
+input,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible,
+select:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
