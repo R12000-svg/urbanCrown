@@ -27,6 +27,7 @@ app.use(morgan(config.nodeEnv === 'development' ? 'dev' : 'combined'));
 
 app.use(rateLimit({ windowMs: 15 * 60 * 1000, max: 300 })); // protección básica
 
+app.get('/', (req, res) => res.json({ status: 'ok', service: 'Urban Crown API' }));
 app.get('/health', (req, res) => res.json({ status: 'ok' }));
 app.use('/api', routes);
 
